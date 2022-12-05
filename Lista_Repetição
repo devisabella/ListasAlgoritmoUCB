@@ -1,0 +1,151 @@
+1. Faça um programa que leia um número inteiro positivo N e imprima todos os números
+naturais de 0 até N em ordem crescente.
+
+int main (){
+    int numero;
+    int i;
+    printf("Qual o numero natural :");
+    scanf("%d",&numero);
+    for ( i = 0; i <= numero; i++)
+    { 
+        printf("  %d  ",i);
+    }
+   
+}
+
+2. Faça um programa que leia um número inteiro positivo N e imprima todos os números
+naturais de 0 até N em ordem decrescente.
+
+int main (){
+    int numero;
+    int i;
+    printf("Qual o numero natural :");
+    scanf("%d",&numero);
+    for ( i = numero; i >= 0; i--)
+    { 
+        printf("  %d  ",i);
+    }
+   
+}
+
+3. Faça um programa que leia um número inteiro N e depois imprima os N primeiros números
+naturais ímpares (sem usar comando condicional).
+
+int main (){
+    int numero,impar=1;
+    int i;
+    printf("Qual o numero natural :");
+    scanf("%d",&numero);
+    for ( i = 1; i <= numero && i >0; i++)
+    { 
+        printf("  %d  ",impar);
+        impar = impar +2;
+    }
+   
+}
+
+4. Faça um programa que determine e mostre os cinco primeiros múltiplos de 3 considerando
+números maiores que 0.
+
+
+
+5. Faça um programa que calcule e mostre a soma dos 50 primeiros números pares.
+
+
+
+6. Faça um programa que mostre uma contagem regressiva na tela, iniciando em 10 e
+terminando em 0. Mostre uma mensagem “FIM!” após a contagem.
+
+
+
+7. Elabore um programa que peça ao usuário para digitar 10 valores. Some esses valores e
+apresente o resultado na tela.
+
+
+
+8. Faça um programa que leia 10 inteiros e imprima sua média.
+
+
+
+9. Escreva um programa que leia 10 números e escreva o menor valor lido e o maior valor
+lido.
+
+
+
+10. Faça um programa que leia 10 inteiros positivos, ignorando não positivos, e imprima sua
+média.
+
+
+
+11. Faça um algoritmo que leia um número positivo e imprima seus divisores. Exemplo: Os
+divisores do número 66 são: 1, 2, 3, 6, 11, 22, 33 e 66.
+
+
+
+12. Faça um programa que exiba a soma de todos os números naturais abaixo de 1.000 que são
+múltiplos de 3 ou 5.
+
+
+
+13. Escreva um programa que leia um número inteiro, maior ou igual a zero, do usuário.
+Imprima o enésimo termo da sequência de Fibonacci. Essa sequência começa no termo de
+ordem zero, e, a partir do segundo termo, seu valor é dado pela soma dos dois termos
+anteriores. Alguns termos dessa sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+
+
+
+14. Elabore um programa que faça a leitura de vários números inteiros até que se digite um
+número negativo. O programa tem de retornar o maior e o menor número lido.
+
+
+
+15. Apresente um programa que calcule o valor de qualquer Hn. Em matemática, o número
+harmônico designado por Hn define-se como o enésimo termo da série harmônica. Ou
+seja:
+
+
+
+17. Escreva um programa que leia um número inteiro positivo N e em seguida imprima N linhas
+do chamado triângulo de Floyd:
+1
+2 3
+4 5 6
+8 9 10
+11 12 13 14 15
+16 17 18 19 20 21
+18. Faça um programa que receba um número inteiro maior do que 1 e verifique se o número
+fornecido é primo ou não.
+
+
+
+19. Faça um programa que calcule e escreva o valor de S:
+
+
+
+20. Elabore um algoritmo que permita ao usuário realizar a compra de frutas. Assim,
+apresente a lista de frutas disponíveis, abaixo, com seus respectivos valores. O algoritmo
+deve permitir ao usuário retomar o menu frutas quantas vezes quiser, e solicitar a
+quantidade de frutas. Ao final, apresente o valor total da compra.
+1 => ABACAXI – 5,00 a unidade
+2 => MAÇA – 1,00 a unidade
+3 => PERA – 4,00 a unidade
+
+
+
+21. Uma pesquisa sobre algumas características físicas da população de uma determinada
+região coletou os seguintes dados, referentes a cada habitante:
+a) sexo (m e f);
+b) cor dos olhos (a (azuis), v (verdes), c (castanhos), p (pretos));
+c) cor dos cabelos (l (loiros), c (castanhos), p (pretos), r (ruivos));
+d) idade em anos.
+e) valor do salário.
+Para o cadastro, todos os campos deve ser validados, ou seja, para sexo, serão aceitos
+somente as opções ‘m’ e ‘f’; para cor de olhos, apenas as opções ‘a’, ‘v’, ‘c’ e ‘p’; para cor
+dos cabelos, apenas as opções ‘l’, ‘c’, ‘p’ e ‘r’; para idade, apenas valores entre 10 e 100
+anos, inclusive estes e para o salário, não aceitar valores negativos.
+Para indicar fim dos habitantes pesquisados, o usuário fornecerá um habitante fictício com
+idade igual a –1.
+Ao final, o algoritmo deve determinar a porcentagem de indivíduos do sexo feminino, com
+idade entre 18 e 35 anos e que tenham olhos castanhos e cabelos castanhos.
+
+
