@@ -1,0 +1,217 @@
+1. O seu primeiro programa em qualquer linguagem de programação normalmente é
+o "Hello World!". Neste primeiro problema tudo o que você precisa fazer é imprimir
+esta mensagem na tela.
+
+#include<stdio.h>
+
+int main(){
+	printf("Hello World! \n");
+}
+
+2. Faça um algoritmo que imprima o poema abaixo, com a mesma formatação:
+Caderno de poesias é um belo lugar.
+Tantas coisas lindas que eu gostaria de falar.
+Eu falo em forma de versos para todos poderem escutar.
+Agora você já sabe por que os poetas passam os dias escrevendo em seus
+cadernos de poesias.
+
+#include<stdio.h>
+
+int main(){
+	printf("Caderno de poesias e um belo lugar. \n");
+	printf("Tantas coisas lindas que eu gostaria de falar. \n");
+	printf("Eu falo em forma de versos para todos poderem escutar. \n");
+	printf("Agora voce ja sabe por que os poetas passam os dias escrevendo em seus \n");
+	printf("cadernos de poesias. \n");
+}
+
+3. Faça um algoritmo que leia um numero inteiro, dois números reais (um float e um
+double), um caracter (uma única letra), uma string (conjunto de caracteres) e um
+booleano. Na sequência, imprima todos com a formatação abaixo.
+Numero inteiro: “valor”
+Numeros reais:
+“valor”
+“valor”
+Letra: “valor”
+String: “valor”
+Logico: “valor”
+
+#include<stdio.h>
+
+int a=0;
+float b=0;
+double c=0;
+char d[1], e[50];
+
+int main(){
+
+printf("Por favor digite um numero inteiro: \n");
+scanf("%d", &a);
+printf("Por favor digite um numero real: \n");
+scanf("%f", &b);
+printf("Por favor digite um numero real maior: \n");
+scanf("%lf", &c);
+printf("Por favor digite a letra: \n");
+scanf("%s", &d);
+printf("Por favor digite a string: \n");
+scanf("%s", &e);
+
+printf("O numero inteiro e: %d\n o numero real e: %.2f\n o numero real maior e: %.2f\n", a, b, c);
+printf("a letra e: %s\n e a string e: %s", d, e);
+}
+
+4. Leia 2 valores inteiros e armazene-os nas variáveis A e B. Efetue a soma
+de A e B atribuindo o seu resultado na variável X. Imprima o resultado da seguinte
+forma “valor de A” + “valor de B” = “valor de X”.
+
+#include<stdio.h>
+
+int main (){
+	
+	int A, B, X;
+	
+	printf("Digite o valor de A: \n");
+	scanf("%d", &A);
+	printf("Digite o valor de B: \n");
+	scanf("%d", &B);
+	
+	X = (A+B);
+	
+	printf("Valor de A =  %d, + Valor de B = %d, = Valor de X = %d", &A, &B, &X);
+}
+
+5. Faça o mesmo exercício, porém, realizando o calculo dentro do printf.
+
+#include<stdio.h>
+
+int A, B, X;
+
+int main(){
+	
+	printf("digite o valor de A: \n");
+	scanf("%d", &A);
+	printf("Digite o valor de B: \n");
+	scanf("%d", &B);
+	
+	X = (A+B);
+	
+	printf("%d + %d = %d", A, B, X);
+}
+
+6. Faça o mesmo exercício, atribuindo valor às variávies A e B (não é necessário
+solicitar ao usuário, os valores serão atribuídos no próprio código).
+
+#include<stdio.h>
+
+int A=10, B=18, X; 
+
+int main(){
+	
+	printf("O valor de A: \n");
+	scanf("%d", &A);
+	printf("O valor de B: \n");
+	scanf("%d", &B);
+	
+	printf("O valor de A %d + o valor de B %d e igual a %d", A, B, X);
+	
+}
+
+7. Leia dois valores inteiros. A seguir, calcule o produto entre estes dois valores e
+atribua esta operação à variável PROD. A seguir mostre a variável PROD com
+mensagem: PROD = “valor de PROD”.
+
+#include<stdio.h>
+
+ int N1, N2, prod;
+ 
+ int main(){
+ 	
+ 	printf("Digite o numero 1: \n");
+ 	scanf("%d", &N1);
+ 	printf("Digite o numero 2: \n");
+ 	scanf("%d", &N2);
+ 	
+ 	prod = (N1+N2);
+ 	
+ 	printf("A soma entre %d e %d e igual a: %d\n", N1, N2, prod);
+ 	printf("Valor de prod = %d", prod);
+ 	}
+
+8. Leia quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do
+produto de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B -
+C * D). Apresente o resultado da seguinte forma:
+DIFERENCA = (“valor de A” * “valor de B” - ““valor de C” * ““valor de D”)
+DIFERENCA = “vaor de DIFERENCA
+
+#include<stdio.h>
+
+int A, B, C, D, diferenca; 
+
+int main(){
+	
+	printf("Digite o numero A: \n");
+	scanf("%d", &A);
+	printf("Digite o numero B: \n");
+	scanf("%d", &B);
+	printf("Digite o numero C: \n");
+	scanf("%d", &C);
+	printf("Digite o numero D: \n");
+	scanf("%d", &D);
+	
+	diferenca = (( A * B) - (C * D));
+	
+	printf("Valor de A: %d * valor de B: %d - valor de C: %d * valor de D: %d\n", A, B, C, D);
+	printf("O valor de diferenca e: %d", diferenca);
+	
+}
+
+9. Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de
+vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha
+15% de comissão sobre suas vendas efetuadas, informar o total a receber no final
+do mês, com duas casas decimais.
+
+#include<stdio.h>
+
+char nome[80];
+double salarioFixo, valorVendas, salarioTotal;
+
+int main(){
+printf("Digite seu nome: \n");
+fgets(nome, 80, stdin);
+printf("Digite seu salario: \n");
+scanf("%f", &salarioFixo);
+printf("Total de vendas no mes em dinheiro: \n");
+scanf("%f", &valorVendas);
+
+salarioTotal = (valorVendas * 0.15) + salarioFixo;
+
+printf("O salario total que voce vai receber e: R$%.2f", salarioTotal);
+
+}
+
+10. Leia os quatro valores correspondentes aos eixos x e y de dois pontos quaisquer
+no plano, p1(x1,y1) e p2(x2,y2) e calcule a distância entre eles, mostrando 4 casas
+decimais após a vírgula, segundo a fórmula:
+11. Faça um programa que calcule e mostre a área da superfície e o volume de uma
+esfera sendo fornecido o valor de seu raio (R). A fórmula para calcular o volume é:
+(4/3) * pi * R³. A fórmula para calcular a área é: 4 * pi * R². Considere (atribua)
+para pi o valor 3.14159. Use o conceito de constante Dica: Ao utilizar a fórmula,
+procure usar (4/3.0) ou (4.0/3), pois algumas linguagens (dentre elas o C++),
+assumem que o resultado da divisão entre dois inteiros é outro inteiro.
+
+#include<stdio.h>
+#include<math.h>
+
+float x1, x2, y1, y2, distancia;
+
+int main(){
+
+printf("Digite o x1 e o y1: \n");
+scanf("%f%f", &x1, %y1);
+printf("Digite o x2 e o y2: \n");
+scanf("%f%f", &x2, &y2);
+
+distancia = sqrt(pow(x2 - x1, 2)+(pow(y2 - y1, 2)));
+
+printf("A distancia entre p1 e p2 e de: %.4f", distancia);
+}
